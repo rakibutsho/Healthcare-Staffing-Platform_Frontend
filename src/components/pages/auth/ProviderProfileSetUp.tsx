@@ -20,26 +20,6 @@ function ProviderProfileSetUp() {
   const router = useRouter();
   const handleHomePage = () => router.push("/");
 
-  // async function geocodeAddress(fullAddress: string) {
-  //   const key = "AIzaSyAtWWBnxcTnUiR70Ce5THlQZyUcDKf5u0A";
-  //   if (!key) throw new Error("Missing NEXT_PUBLIC_GOOGLE_MAPS_API_KEY");
-
-  //   const url =
-  //     "https://maps.googleapis.com/maps/api/geocode/json" +
-  //     `?address=${encodeURIComponent(fullAddress)}` +
-  //     `&key=${key}`;
-
-  //   const res = await fetch(url);
-  //   const data = await res.json();
-
-  //   if (data.status !== "OK" || !data.results?.length) {
-  //     throw new Error(data.error_message || "Unable to geocode this address");
-  //   }
-
-  //   const location = data.results[0].geometry.location; // { lat, lng }
-  //   return { lat: location.lat, lng: location.lng };
-  // }
-
   const renderStepContent = () => {
     switch (credential) {
       case "Professional Info":
